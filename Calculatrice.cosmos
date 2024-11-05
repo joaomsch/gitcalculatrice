@@ -1,0 +1,105 @@
+Auteur: pf28ywm
+Date: 28.10.2024
+Entreprise: DGEP
+Description: Calculatrice
+
+Voici les ordres du programme Calculatrice  :
+	// Programme Cosmos - Calculs Interstellaires
+	
+	Répéter 100x
+
+		Afficher "\n\nBienvenue dans l'univers des calculs cosmiques !".
+		Afficher "Choisissez votre opération interstellaire :\n\n".
+		Afficher "1. Addition\n".
+		Afficher "2. Soustraction\n".
+		Afficher "3. Multiplication\n".
+		Afficher "4. Division\n".
+		Afficher "5. Inversion (1/x)\n".
+		Afficher "6. Racine\n".
+		Afficher "7. Puissance\n".
+		Afficher "8. Pourcentage (x/100)\n\n".
+		
+		Créer une zone mémoire nommée #reponse.
+
+		Afficher "Quel est votre choix d'opération ?".
+		
+		Récupérer la saisie et la stocker dans la zone mémoire nommée #reponse.
+		Afficher " Vous avez choisi #reponse.\n".
+		
+		Si #reponse == 1 ou #reponse == 2 ou #reponse == 3 ou #reponse == 4 alors
+			
+            Créer une zone mémoire nommée #nombre1.
+		
+			Afficher "\nVotre premier chiffrre ou nombre (Validez avec enter)?\n".
+		
+			Récupérer la saisie et la stocker dans la zone mémoire nommée #nombre1.
+		
+			Créer une zone mémoire nommée #nombre2.
+		
+			Afficher "\nVotre deuxième chiffrre ou nombre (Validez avec enter)?\n".
+		
+			Récupérer la saisie et la stocker dans la zone mémoire nommée #nombre2.
+		
+		
+			Si #reponse == 1 alors
+				Créer une zone mémoire nommée #resultat.
+				#resultat = #nombre1 plus #nombre2.
+				Afficher "Votre résultat de #nombre1 + #nombre2 est  #resultat.".
+			?
+			
+			Si #reponse == 2 alors
+				Créer une zone mémoire nommée #resultat.
+				#resultat = #nombre1 moins #nombre2.
+				Afficher "Votre résultat de #nombre1 - #nombre2 est  #resultat.".
+			?
+			
+			Si #reponse == 3 alors
+				Créer une zone mémoire nommée #resultat.
+				#resultat = #nombre1 fois #nombre2.
+				Afficher "Votre résultat de #nombre1 * #nombre2 est  #resultat.".
+			?
+			
+			Si #reponse == 4 alors
+				Créer une zone mémoire nommée #resultat.
+				#resultat = #nombre1 divisé par #nombre2.
+				Afficher "Votre résultat de #nombre1 ^ #nombre2 est  #resultat".
+			?
+			
+		sinon si  #reponse == 5 ou #reponse == 6 ou #reponse == 7 ou #reponse == 8 alors
+			Créer une zone mémoire nommée #nombre1.
+		
+			Afficher "\nVotre premier chiffrre ou nombre (Validez avec enter)?\n".
+		
+			Récupérer la saisie et la stocker dans la zone mémoire nommée #nombre1.
+			
+			Si #reponse == 5 alors
+				Créer une zone mémoire nommée #resultat.
+				#resultat = 1 divisé par #nombre1.
+				Afficher "Votre résultat de 1 divisé par #nombre1  est  #resultat".
+			?
+			
+			Si #reponse == 6 alors
+				Créer une zone mémoire nommée #resultat.
+				#resultat = #nombre1 élevé à la puissance 2.
+				Afficher "Votre résultat de #nombre1 élevé à la puissance 2  est  #resultat.".
+			?
+			
+			Si #reponse == 7 alors
+				Créer une zone mémoire nommée #resultat.
+				#resultat = racine carrée de #nombre1.
+				Afficher "Votre résultat de la racine carrée de #nombre1  est  #resultat".
+			?
+			
+			Si #reponse == 8 alors
+				Créer une zone mémoire nommée #resultat.
+				#resultat = #nombre1 divisé par 100. 
+				Afficher "Votre résultat de #nombre1 divisé par 100 est  #resultat".
+			?
+		et sinon 
+			Effacer l'écran.
+			Afficher "Saisie incorrect".
+		?	
+		
+	>>
+		
+Fin de la transmission.
